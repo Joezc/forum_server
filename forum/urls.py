@@ -16,16 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-<<<<<<< HEAD
 import item
 urlpatterns = [
     url(r'^item/', include('item.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^user/', include('users.urls')),
     url(r'^topstories', item.views.topstories, name='topstories'),
-=======
-urlpatterns = [
-    url(r'^item/', include('item.urls')),
-    url(r'^admin/', admin.site.urls),
->>>>>>> 75dd0da0c5446ad5269c80054de79fad7b804633
 ]
