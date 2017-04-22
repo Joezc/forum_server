@@ -5,7 +5,7 @@ from django.db import models
 
 class item(models.Model):
     """item"""
-    item_id = models.IntegerField(default=0, primary_key=True)
+    id = models.IntegerField(default=0, primary_key=True)
     deleted = models.BooleanField(default=False)
     TYPES = (('S', "story"), ('C', "comment"),)
     type = models.CharField(
